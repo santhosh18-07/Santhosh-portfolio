@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Santhosh A | Content Creator & Video Editor</title>
+<meta name="description" content="Portfolio of Santhosh A, ECE student, content creator and video editor. Blogs, edits and reels for Fiverr clients.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎬</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F5F6FB;--ink:#15172B;--mute:#5B5F7A;--card:#fff;--line:#DDE0F0;--blue:#2B3AFF;--sun:#FFC933;--r:22px;
+--disp:'Bricolage Grotesque','Segoe UI',sans-serif;--body:'DM Sans','Segoe UI',sans-serif}
+body.dark{--bg:#0D0F1E;--ink:#F2F3FA;--mute:#9A9EBB;--card:#171A30;--line:#2A2E4D}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);background:var(--bg);color:var(--ink);line-height:1.6;transition:background .5s,color .5s;min-height:100vh;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:var(--disp);line-height:1.05;letter-spacing:-.02em}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0}
+.logo{font-family:var(--disp);font-weight:800;font-size:1.25rem}
+.logo i{display:inline-block;width:10px;height:10px;background:var(--sun);border-radius:50%;margin-left:3px}
+.pill{border:1.5px solid var(--line);border-radius:99px;padding:8px 18px;font-weight:500;font-size:.92rem;background:var(--card);transition:.2s}
+.pill:hover{border-color:var(--blue);transform:translateY(-2px)}
+.view{display:none}.view.on{display:block;animation:in .55s ease both}
+@keyframes in{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+
+/* HERO */
+.hero{padding:56px 0 40px}
+.hello{color:var(--mute);font-size:1.1rem;margin-bottom:10px}
+.hero h1{font-weight:800;font-size:clamp(3rem,10vw,7.2rem)}
+.type{font-family:var(--disp);font-weight:800;font-size:clamp(1.6rem,5vw,3rem);color:var(--blue);margin-top:14px;min-height:1.3em}
+.caret{display:inline-block;width:.09em;height:.95em;background:var(--blue);margin-left:5px;vertical-align:-.08em;animation:bl 1s steps(1) infinite}
+@keyframes bl{50%{opacity:0}}
+.tag{max-width:520px;margin-top:18px;color:var(--mute);font-size:1.1rem}
+.cta{display:inline-block;margin-top:28px;background:var(--ink);color:var(--bg);padding:14px 26px;border-radius:99px;font-weight:700;transition:.2s}
+.cta:hover{background:var(--blue);color:#fff;transform:translateY(-2px)}
+
+/* CHOOSER */
+.choose{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:34px 0 70px}
+.big{position:relative;min-height:290px;border-radius:30px;padding:30px;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;transition:.35s;isolation:isolate}
+.big:hover{transform:translateY(-8px) rotate(-.6deg)}
+.big h3{font-size:clamp(2rem,4vw,2.9rem)}
+.big p{margin-top:8px;max-width:300px;opacity:.85}
+.big .go{margin-top:18px;font-weight:700;display:inline-flex;gap:8px;align-items:center}
+.big .go b{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:currentColor;transition:.3s}
+.big .go b::after{content:"";width:9px;height:9px;border-top:2.5px solid;border-right:2.5px solid;transform:rotate(45deg);margin-left:-3px;color:var(--c)}
+.big:hover .go b{transform:translateX(8px)}
+.write{background:var(--blue);color:#fff;--c:var(--blue)}
+.write .deco{position:absolute;right:-20px;top:-10px;font:800 12rem/1 var(--disp);opacity:.14;z-index:-1}
+.edit{background:var(--ink);color:#fff;--c:var(--ink)}
+.edit .deco{position:absolute;right:20px;top:24px;width:130px;height:170px;z-index:-1;opacity:.9;
+background:repeating-linear-gradient(#0000 0 22px,var(--sun) 22px 26px);-webkit-mask:linear-gradient(90deg,#000 0 14px,#0000 14px calc(100% - 14px),#000 0);mask:linear-gradient(90deg,#000 0 14px,#0000 14px calc(100% - 14px),#000 0);opacity:.35}
+.edit .deco::after{content:"";position:absolute;inset:6px 22px;border:3px solid var(--sun);border-radius:6px}
+
+/* SECTIONS */
+section{margin-bottom:70px}
+h2{font-weight:800;font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:24px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:var(--card);border:1.5px solid var(--line);border-radius:var(--r);padding:26px}
+.card .big-n{font-family:var(--disp);font-weight:800;font-size:2.6rem;color:var(--blue)}
+.card h3{font-size:1.2rem;margin:6px 0}
+.card p{color:var(--mute);font-size:.97rem}
+.skills{display:flex;flex-wrap:wrap;gap:10px}
+.skills span{padding:10px 20px;border-radius:99px;background:var(--card);border:1.5px solid var(--line);font-weight:500}
+.skills span:nth-child(odd){background:var(--sun);border-color:var(--sun);color:#15172B}
+footer{border-top:1.5px solid var(--line);padding:34px 0 50px;color:var(--mute);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+footer b{color:var(--ink)}
+
+/* DARK PAGES */
+.glow{position:fixed;inset:-20% -10% auto auto;width:560px;height:560px;border-radius:50%;background:radial-gradient(#2B3AFF55,#0000 65%);pointer-events:none;z-index:-1;opacity:0;transition:opacity .6s}
+body.dark .glow{opacity:1}
+.ph{padding:44px 0 34px}
+.ph h1{font-weight:800;font-size:clamp(2.6rem,8vw,5.5rem)}
+.ph p{color:var(--mute);max-width:560px;margin-top:14px;font-size:1.1rem}
+.link-card{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;background:linear-gradient(135deg,#2B3AFF,#6A4DFF);border-radius:30px;padding:36px;color:#fff;transition:.3s;margin-bottom:26px}
+.link-card:hover{transform:translateY(-6px);box-shadow:0 24px 60px -20px #2B3AFF}
+.link-card h3{font-size:clamp(1.6rem,3.5vw,2.4rem)}
+.link-card p{opacity:.85;margin-top:8px}
+.link-card .btn{background:#fff;color:#15172B;padding:14px 24px;border-radius:99px;font-weight:700;white-space:nowrap}
+.link-card.ig{background:linear-gradient(135deg,#F9A826,#E1306C 55%,#7B3FE4)}
+.tips{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:60px}
+
+/* UPLOAD */
+.drop{border:2px dashed var(--line);border-radius:var(--r);padding:34px;text-align:center;transition:.2s;background:var(--card)}
+.drop.hover{border-color:var(--sun);background:#FFC93312}
+.drop h3{font-size:1.5rem;margin-bottom:6px}
+.drop p{color:var(--mute);margin-bottom:18px}
+.row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.btn2{background:var(--sun);color:#15172B;border:0;font:700 .95rem var(--body);padding:12px 22px;border-radius:99px;cursor:pointer;transition:.2s}
+.btn2:hover{transform:translateY(-2px)}
+input[type=text]{background:var(--bg);color:var(--ink);border:1.5px solid var(--line);border-radius:99px;padding:12px 18px;font:inherit;min-width:min(320px,100%)}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px;margin:30px 0 70px}
+.vid{background:var(--card);border:1.5px solid var(--line);border-radius:var(--r);overflow:hidden;animation:in .4s both}
+.vid video,.vid iframe{width:100%;aspect-ratio:16/10;background:#000;border:0;display:block}
+.vid .meta{display:flex;gap:8px;padding:12px 14px;align-items:center}
+.vid input{flex:1;background:none;border:0;color:var(--ink);font:700 1rem var(--body);min-width:0}
+.vid button{background:none;border:1.5px solid var(--line);color:var(--mute);border-radius:99px;padding:6px 12px;cursor:pointer;font:500 .85rem var(--body)}
+.vid button:hover{color:#ff6b6b;border-color:#ff6b6b}
+.empty{grid-column:1/-1;text-align:center;color:var(--mute);padding:30px}
+
+/* CONTACT MODAL */
+.navr{display:flex;gap:10px;align-items:center}
+.pill.solid{background:var(--sun);border-color:var(--sun);color:#15172B;font-weight:700;cursor:pointer;font-family:var(--body)}
+.cta.alt{background:transparent;color:var(--ink);border:1.5px solid var(--ink);margin-left:10px;cursor:pointer;font:700 1rem var(--body)}
+.modal{position:fixed;inset:0;background:#0A0C1BCC;backdrop-filter:blur(6px);display:none;place-items:center;padding:20px;z-index:50}
+.modal.on{display:grid;animation:fade .25s both}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.box{background:var(--card);color:var(--ink);border:1.5px solid var(--line);border-radius:28px;padding:30px;width:min(440px,100%);position:relative;animation:in .35s both}
+.box h2{font-size:2rem;margin-bottom:6px}
+.box>p{color:var(--mute);margin-bottom:20px}
+.x{position:absolute;right:16px;top:16px;width:38px;height:38px;border-radius:50%;border:1.5px solid var(--line);background:none;color:var(--ink);font-size:1.2rem;cursor:pointer}
+.ct{display:flex;align-items:center;gap:14px;padding:14px 16px;border:1.5px solid var(--line);border-radius:18px;margin-bottom:10px;transition:.2s}
+.ct:hover{border-color:var(--blue);transform:translateX(4px)}
+.ct .ic{flex:none;width:42px;height:42px;border-radius:12px;background:var(--sun);color:#15172B;display:grid;place-items:center;font-size:1.2rem}
+.ct div{min-width:0;flex:1}
+.ct small{color:var(--mute);display:block;font-size:.8rem}
+.ct strong{display:block;overflow-wrap:anywhere;font-size:.97rem}
+.cp{background:none;border:1.5px solid var(--line);color:var(--mute);border-radius:99px;padding:5px 12px;cursor:pointer;font:500 .8rem var(--body)}
+.cp:hover{color:var(--ink);border-color:var(--blue)}
+@media(max-width:760px){.choose,.grid3,.tips{grid-template-columns:1fr}.big{min-height:230px}.link-card{grid-template-columns:1fr;padding:26px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="glow"></div>
+<div class="wrap">
+<nav>
+  <a href="#/" class="logo">Santhosh A<i></i></a>
+  <div class="navr">
+    <a id="navbtn" class="pill" href="#/">Home</a>
+    <button class="pill solid" data-contact>Contact me</button>
+  </div>
+</nav>
+
+<!-- HOME -->
+<main id="home" class="view">
+  <header class="hero">
+    <p class="hello">Hi, I'm</p>
+    <h1>Santhosh A</h1>
+    <div class="type"><span id="tw"></span><span class="caret"></span></div>
+    <p class="tag">I turn ideas into stories people love to read and watch. Blogs, reels and edits for creators and brands.</p>
+    <a class="cta" href="#pick">See my work</a><button class="cta alt" data-contact>Contact me</button>
+  </header>
+
+  <div class="choose" id="pick">
+    <a class="big write" href="#/content"><span class="deco">Aa</span><h3>Content Creator</h3><p>Read my blog and the way I write.</p><span class="go">Open blog <b></b></span></a>
+    <a class="big edit" href="#/editor"><span class="deco"></span><h3>Video Editor</h3><p>Watch my edits and upload new ones.</p><span class="go">Open reel <b></b></span></a>
+  </div>
+
+  <section>
+    <h2>Qualifications</h2>
+    <div class="grid3">
+      <div class="card"><div class="big-n">2nd yr</div><h3>B.E. ECE</h3><p>Studying Electronics and Communication Engineering.</p></div>
+      <div class="card"><div class="big-n">85%</div><h3>12th Standard</h3><p>Completed higher secondary with 85%.</p></div>
+      <div class="card"><div class="big-n">Jr + Sr</div><h3>English Typewriting</h3><p>Passed both Junior and Senior grade exams.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>What I do</h2>
+    <div class="skills"><span>Content creation</span><span>Video editing</span><span>Blog writing</span><span>Reels and shorts</span><span>Fast typing</span><span>Posters</span></div>
+  </section>
+
+  <footer><span><b>Available for Fiverr projects.</b> <a href="#" data-contact onclick="return false" style="text-decoration:underline">Contact me</a> with your idea.</span><a href="https://www.instagram.com/cb_posters/" target="_blank" rel="noopener">Instagram @cb_posters</a></footer>
+</main>
+
+<!-- CONTENT -->
+<main id="content" class="view">
+  <header class="ph"><h1>Words that<br>get read.</h1><p>I write blogs and creative content. Everything I publish lives on my Blogger page.</p></header>
+  <a class="link-card" href="https://www.blogger.com/blog/posts/5568425829353072364" target="_blank" rel="noopener">
+    <div><h3>Read my blog</h3><p>Opens in a new tab on Blogger.</p></div><span class="btn">Open blog</span>
+  </a>
+  <div class="tips">
+    <div class="card"><h3>Blog posts</h3><p>Clear, original writing on topics people search for.</p></div>
+    <div class="card"><h3>Captions and scripts</h3><p>Short copy for reels, posters and social pages.</p></div>
+    <div class="card"><h3>Fast and accurate</h3><p>Typewriting certified in Junior and Senior grades.</p></div>
+  </div>
+</main>
+
+<!-- EDITOR -->
+<main id="editor" class="view">
+  <header class="ph"><h1>Cut. Color.<br>Publish.</h1><p>See my latest edits on Instagram, or add a new edit to the gallery below.</p></header>
+  <a class="link-card ig" href="https://www.instagram.com/cb_posters/" target="_blank" rel="noopener">
+    <div><h3>@cb_posters on Instagram</h3><p>Reels, posters and edits. Opens in a new tab.</p></div><span class="btn">View Instagram</span>
+  </a>
+
+  <h2 style="margin-top:50px">Add your edit</h2>
+  <div class="drop" id="drop">
+    <h3>Drop a video here</h3>
+    <p>MP4 or MOV. Saved in this browser only.</p>
+    <div class="row">
+      <button class="btn2" id="pickbtn">Choose video file</button>
+      <input type="file" id="file" accept="video/*" hidden multiple>
+    </div>
+    <div class="row" style="margin-top:14px">
+      <input type="text" id="url" placeholder="Or paste a YouTube or .mp4 link">
+      <button class="btn2" id="addlink">Add link</button>
+    </div>
+  </div>
+  <div class="gallery" id="gal"></div>
+</main>
+</div>
+
+<!-- CONTACT MODAL -->
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="ctitle">
+  <div class="box">
+    <button class="x" id="close" aria-label="Close">&times;</button>
+    <h2 id="ctitle">Contact me</h2>
+    <p>Have a project in mind? Reach me any of these ways.</p>
+    <a class="ct" href="mailto:santhoshac2007@gmail.com"><span class="ic">✉</span><div><small>Email</small><strong>santhoshac2007@gmail.com</strong></div><button class="cp" data-copy="santhoshac2007@gmail.com">Copy</button></a>
+    <a class="ct" href="https://www.linkedin.com/in/santhosh-a-/" target="_blank" rel="noopener"><span class="ic">in</span><div><small>LinkedIn</small><strong>linkedin.com/in/santhosh-a-</strong></div></a>
+    <a class="ct" href="tel:+917695987214"><span class="ic">☎</span><div><small>Phone</small><strong>+91 7695987214</strong></div><button class="cp" data-copy="+91 7695987214">Copy</button></a>
+  </div>
+</div>
+
+<script>
+/* ---------- Contact modal ---------- */
+const modal=document.getElementById('modal');
+const openM=()=>{modal.classList.add('on');document.getElementById('close').focus()};
+const closeM=()=>modal.classList.remove('on');
+document.querySelectorAll('[data-contact]').forEach(b=>b.addEventListener('click',e=>{e.preventDefault();openM()}));
+document.getElementById('close').onclick=closeM;
+modal.addEventListener('click',e=>{if(e.target===modal)closeM()});
+addEventListener('keydown',e=>{if(e.key==='Escape')closeM()});
+document.querySelectorAll('[data-copy]').forEach(b=>b.onclick=async e=>{
+  e.preventDefault();e.stopPropagation();
+  try{await navigator.clipboard.writeText(b.dataset.copy);b.textContent='Copied';setTimeout(()=>b.textContent='Copy',1500)}catch(_){b.textContent='Select text'}
+});
+
+/* ---------- Typewriter (nod to English Typewriting) ---------- */
+const words=["Content Creator","Video Editor","Storyteller","ECE Student"],tw=document.getElementById('tw');
+let wi=0,ci=0,del=false;
+(function tick(){
+  const w=words[wi];
+  tw.textContent=w.slice(0,ci);
+  if(!del&&ci===w.length){del=true;return setTimeout(tick,1500)}
+  if(del&&ci===0){del=false;wi=(wi+1)%words.length}
+  ci+=del?-1:1;
+  setTimeout(tick,del?40:85);
+})();
+
+/* ---------- Router ---------- */
+const views={'/':'home','/content':'content','/editor':'editor'};
+function route(){
+  const p=location.hash.replace('#','');
+  const id=views[p]||(p==='pick'?'home':'home');
+  document.querySelectorAll('.view').forEach(v=>v.classList.toggle('on',v.id===id));
+  const dark=id!=='home';
+  document.body.classList.toggle('dark',dark);
+  const nb=document.getElementById('navbtn');
+  nb.textContent=dark?'Back to Home':'Home';
+  nb.style.display=dark?'':'none';
+  if(p!=='pick')window.scrollTo(0,0);
+}
+addEventListener('hashchange',route);route();
+
+/* ---------- IndexedDB storage for uploaded edits ---------- */
+let db;
+const req=indexedDB.open('edits',1);
+req.onupgradeneeded=e=>e.target.result.createObjectStore('v',{keyPath:'id'});
+req.onsuccess=e=>{db=e.target.result;render()};
+req.onerror=()=>render();
+const store=m=>db.transaction('v',m).objectStore('v');
+const all=()=>new Promise(r=>{if(!db)return r([]);const q=store('readonly').getAll();q.onsuccess=()=>r(q.result);q.onerror=()=>r([])});
+const put=o=>new Promise(r=>{if(!db)return r();const q=store('readwrite').put(o);q.onsuccess=r;q.onerror=r});
+const rem=id=>new Promise(r=>{const q=store('readwrite').delete(id);q.onsuccess=r});
+
+const gal=document.getElementById('gal');
+async function render(){
+  const items=(await all()).sort((a,b)=>b.id-a.id);
+  gal.innerHTML='';
+  if(!items.length){gal.innerHTML='<p class="empty">No edits yet. Drop a video above to add your first one.</p>';return}
+  items.forEach(it=>{
+    const d=document.createElement('div');d.className='vid';
+    let media;
+    if(it.blob){media=document.createElement('video');media.controls=true;media.preload='metadata';media.src=URL.createObjectURL(it.blob)}
+    else if(it.embed){media=document.createElement('iframe');media.src=it.embed;media.allowFullscreen=true;media.loading='lazy'}
+    else{media=document.createElement('video');media.controls=true;media.src=it.link}
+    const m=document.createElement('div');m.className='meta';
+    const t=document.createElement('input');t.value=it.title;t.setAttribute('aria-label','Video title');
+    t.onchange=()=>{it.title=t.value;put(it)};
+    const b=document.createElement('button');b.textContent='Delete';
+    b.onclick=async()=>{await rem(it.id);render()};
+    m.append(t,b);d.append(media,m);gal.append(d);
+  });
+}
+async function addFiles(files){
+  for(const f of files){
+    if(!f.type.startsWith('video/'))continue;
+    await put({id:Date.now()+Math.random(),title:f.name.replace(/\.[^.]+$/,''),blob:f});
+  }
+  render();
+}
+const file=document.getElementById('file'),drop=document.getElementById('drop');
+document.getElementById('pickbtn').onclick=()=>file.click();
+file.onchange=()=>{addFiles(file.files);file.value=''};
+['dragenter','dragover'].forEach(n=>drop.addEventListener(n,e=>{e.preventDefault();drop.classList.add('hover')}));
+['dragleave','drop'].forEach(n=>drop.addEventListener(n,e=>{e.preventDefault();drop.classList.remove('hover')}));
+drop.addEventListener('drop',e=>addFiles(e.dataTransfer.files));
+
+document.getElementById('addlink').onclick=async()=>{
+  const inp=document.getElementById('url'),v=inp.value.trim();
+  if(!v)return;
+  const yt=v.match(/(?:youtu\.be\/|v=|shorts\/)([\w-]{11})/);
+  const o={id:Date.now(),title:'My edit'};
+  if(yt)o.embed='https://www.youtube.com/embed/'+yt[1];
+  else if(/\.(mp4|mov|webm)(\?|$)/i.test(v))o.link=v;
+  else{inp.value='';inp.placeholder='Use a YouTube or direct .mp4 link';return}
+  await put(o);inp.value='';render();
+};
+</script>
+</body>
+</html>
